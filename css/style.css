@@ -60,6 +60,7 @@ header {
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: yellow;
 }
 #leftCloud {
 	left: 25%;
