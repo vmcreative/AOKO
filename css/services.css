@@ -1,0 +1,10 @@
+#comingSoon {
+	margin: 0rem auto;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 4rem;
+}
+#comingSoon img {
+	width: auto;
+	max-height: 25rem;
+}

@@ -1,0 +1,86 @@
+.row {
+	display: -webkit-flex;
+    display: -ms-flexbox;
+	display:flex;
+    -webkit-align-items:center;
+    -ms-align-items:center;
+    align-items:center;
+}
+.slideContainer {
+	position: relative;
+	display:block;
+	width: 100%;
+	max-width: 25rem;
+	margin: 0rem auto;
+}
+.materialHeader h1{
+	padding: .25rem .5rem;
+}
+.materialHeader h1 span{
+	float: right;
+	font-size: 80%;
+	padding-top: .2rem;
+	vertical-align: bottom;
+}
+#corrugate .materialHeader h1 {
+	background-color: #f99d8f;
+}
+#leather .materialHeader h1 {
+	background-color: #39f793;
+}
+#acrylic .materialHeader h1 {
+	background-color: #f9c55d;
+}
+#veneer .materialHeader h1 {
+	background-color: #b889ef;
+}
+#plywood .materialHeader h1 {
+	background-color: #f99d8f;
+}
+#paper .materialHeader h1 {
+	background-color: #39f793;
+}
+#rubber .materialHeader h1 {
+	background-color: #f9c55d;
+}
+#foamRubber .materialHeader h1 {
+	background-color: #b889ef;
+}
+#felt .materialHeader h1 {
+	background-color: #f99d8f;
+}
+.materialSpec table {
+	padding-top: .75rem;
+	margin: 0em auto;
+	width: 100%;
+	text-align: left;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+.materialSpec td {
+	border: .5rem solid white;
+	width: 50%;
+}
+.materialSpec td:first-child {
+	border-left: none;
+}
+.materialSpec td:last-child {
+	border-right: none;
+}
+.materialSpec thead td {
+	background-color:  #f3f3f3;
+	font-weight: 400;
+	padding: .5rem;
+}
+.materialSpec tbody td {
+	padding: .125rem 0rem .125rem .5rem;
+}
+@media screen and (max-width: 43.750em) {
+	.materialHeader, .materialSpec {
+		max-width: 40rem;
+		margin: 0rem auto;
+	}
+	.row {
+		display: block;
+	}
+}

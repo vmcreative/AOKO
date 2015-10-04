@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!-- STYLE RESET !-->
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<!-- MAIN CSS !-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- PAGE CSS !-->
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<!-- FONTS !-->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=roboto:400italic,300,700,400">
+<link rel="stylesheet" type="text/css" href="http://www.google.com/fonts#UsePlace:use/css?family=roboto+slab:400,300,700">
+<!-- FAVICON !-->
+<link rel="shortcut icon" href="ico/favicon_slide.ico" type="image/x-icon"/>
+
+<html>
+<head>
+
+<!-- META !-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aoko | Empowering Creativity</title>
+<!-- jQUERY !-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- NAV !-->
+<script src="js/nav.js"></script>
+<!-- SHOW/HIDE !-->
+<script src="js/declarativeToggle.js"></script>
+<!-- MODAL !-->
+<script src="js/modal.js"></script>
+
+</head>
+<body>
+<main role="main">
+
+<!-- MODAL WINDOW !-->
+<div id="modalWindow">
+	<div id="modalBox">
+		<img src="images/products/nova_skin/nova_1_mahogany.png" id="modalImg">
+		<h1 id="m-t-1" class="modalText">NOVA SKIN</h1>
+		<p id="m-t-2" class="modalText">CUSTOMIZEABLE</p>
+		<p id="m-t-3" class="modalText">AUTHENTIC WOOD</p>
+		<p id="m-t-4" class="modalText">LAPTOP VENEERS</p>
+		<a id="m-t-5" class="modalText hvr-fade-y" href="products.html#novaSkin_">FIND OUT MORE</a>
+		<img src="images/x_box.png" id="m-close" onclick="modalClose(event)">
+	</div>
+</div>
+<!-- end MODAL WINDOW !-->
+
+<!-- SCROLL NAV !-->
+	<nav class="scrollMenu shadowed hideSmall" role="navigation">
+		<ul id="scrollList" class="group"></ul>
+	</nav>
+	<script src="js/scrollNav.js"></script>
+<!-- end SCROLL NAV !-->
+
+<!-- HEADER !-->
+	<header id="header" class="noDrag">
+		<div class="shadowed">
+			<div id="leftCloud" data-scroll-speed="3"></div>
+			<div id="topCloud" data-scroll-speed="2"></div>
+			<div id="rightCloud" data-scroll-speed="3"></div>
+		</div>
+		<div data-scroll-speed="2">
+			<div id="logo" ></div>
+			<div id="rotate"></div>
+		</div>
+	</header>
+<!-- end HEADER !-->
+
+<!-- NAV BAR !-->
+	<nav class="menu" role="navigation">
+	<span data-toggle-target=".nav-show-hide" data-toggle-text="HIDE" class="mobileMenu">MENU</span>
+		<div class="nav-show-hide">
+			<ul id="menuList" class="group">
+				<li><a href="#" id="menuLink1" class="menuButton hvr-fade-m">&nbsp;</a></li>
+				<li><a href="#" id="menuLink2" class="menuButton hvr-fade-c">&nbsp;</a></li>
+				<li><a href="#" id="menuLink3" class="menuButton hvr-fade-y">&nbsp;</a></li>
+				<li><a href="#" id="menuLink4" class="menuButton hvr-fade-m">&nbsp;</a></li>
+				<li><a href="#" id="menuLink5" class="menuButton hvr-fade-c">&nbsp;</a></li>
+				<li><a href="#" id="menuLink6" class="menuButton hvr-fade-y">&nbsp;</a></li>
+			</ul>
+		</div>
+	</nav>
+<!-- end NAV BAR !-->
+
+<!-- PAGE CONTENT !-->
+	<div class="contentArea shadowed">
+		<section id="welcome" class="contentStyle1">
+			<div class="grid">
+				<div class="row">
+					<div class= "col col-3-6 col-4-5">
+						<h1>Welcome to AOKO laser cutting,</h1>
+						<p>Your one-stop shop for laser cutting and engraving! AOKO offers a wide range of materials and services for creating one-of-a-kind designer objects to small-batch consumer products</p>
+						<p>Based in Chicago, AOKO is <b>empowering creativity</b> by guiding our customers through the product design and manufacturing process. </p>
+						<p>AOKO helps you deliver high quality projects fast. Our dedicated team of designers is ready to take on any project, large or small. Our process is simple, fast and custom tailored to your needs!</p>
+					</div>
+					<div id="splashImage1" class="col col-3-6 col-4-7 splashImage hideSmall"></div>
+				</div>
+			</div>
+		</section>
+		<section id="process" class="contentStyle2">
+			<h1>How it works:</h1>
+			<div class="grid">
+				<div class="row noDrag">
+					<div class="col col-1-6 col-3-3">
+						<img src="images/home/process/step_1.png">
+						<p>Send us your idea, with some drawings.</p>
+					</div>
+					<div class="col col-1-6 col-3-3">
+						<img src="images/home/process/step_2.png">
+						<p>We help you select materials, and give you a quote.</p>
+					</div>
+					<div class="col col-1-6 col-3-3">
+						<img src="images/home/process/step_3.png">
+						<p>Once you're satisfied, we get to work. Lasers, cool!</p>
+					</div>
+					<div class="col col-1-6 col-3-3">
+						<img src="images/home/process/step_4.png">
+						<p>Your project gets shipped, when and where you need it.</p>
+					</div>
+				</div>
+				<div class="row">
+					<a class="button hvr-fade-m" href="get_quote.html">GET A QUOTE TODAY</a>
+				</div>
+			</div>
+		</section>
+		<!-- <section id="kickstarter" class="contentStyle1">
+			<div class="grid">
+				<div class="row">
+					<div class="col col-3-6 col-4-7">
+						<iframe class="video" src="https://www.youtube.com/embed/QrGrOK8oZG8" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col col-3-6 col-4-5">
+						<h1>Header goes here!</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem mi, tincidunt quis luctus nec, efficitur ut dolor. Aenean nisi dolor, ultrices vel lectus in, pulvinar elementum nisi. Integer lobortis molestie ipsum, ac congue erat vulputate in. Aenean in tortor et nibh cursus dictum.</p>
+						<p>Mauris bibendum nunc finibus odio facilisis faucibus. Donec non aliquet dui. Vestibulum eleifend quis enim dictum pretium. Nunc fringilla nisl eget viverra tincidunt. Nunc a urna vitae metus feugiat sodales sit amet vel nibh. Aenean sed mi vel felis pretium efficitur lobortis nec nibh.</p>
+						<a href="#">Link text goes here</a>
+					</div>
+				</div>
+			</div>
+		</section> !-->
+		<section id"article" class="contentStyle1">
+			<div class="grid">
+				<div class="row">
+					<div id="splashImage2" class="col col-3-6 col-4-7 splashImage hideSmall"></div>
+					<div class="col col-3-6 col-4-5">
+						<h1>We love your ideas.</h1>
+						<p>AOKO is more than just another manufacturing service - we're here to help your creative vision come to life. We'll walk you through the steps of developing your product using our library of research and experience, from initial ideation to choosing materials to prototyping and testing.</p>
+						<p>AOKO provides services geared to a wide range of prior design experience. If you're unsure of the possible applications of laser cutting for your product, feel free to drop a line, and we'll happily work with you to find the best solution.</p>
+						<p>See some of our client projects on <a href="https://instagram.com/aokochicago/">Instagram!</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="materials" class="contentStyle2">
+			<h1>Explore our wide range of materials:</h1>
+			<div class="grid">
+				<div class="row">
+					<div class="col col-1-6 col-3-3">
+						<a href="materials.html#corrugate_">
+							<img src="images/materials/corrugates.png" class="hvr-grow-rotate">
+							<p>Corrugate</p>
+						</a>
+					</div>
+					<div class="col col-1-6 col-3-3 hide1">
+						<a href="materials.html#leather_">
+							<img src="images/materials/leathers.png" class="hvr-grow-rotate">
+							<p>Leather</p>
+						</a>
+					</div>
+					<div class="col col-1-6 col-3-3">
+						<a href="materials.html#acrylic_">
+							<img src="images/materials/acrylic.png" class="hvr-grow-rotate">
+							<p>Acrylic</p>
+						</a>
+					</div>
+					<div class="col col-1-6 col-3-3 hide1">
+						<a href="materials.html#veneer_">
+							<img src="images/materials/wood_veneer.png" class="hvr-grow-rotate">
+							<p>Wood Veneer</p>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-1-6 col-3-3">
+						<a href="materials.html#plywood_">
+							<img src="images/materials/plywood.png" class="hvr-grow-rotate">
+							<p>Plywood &amp; MDF</p>
+						</a>
+					</div>
+					<div class="col col-1-6 col-3-3 ">
+						<a href="materials.html#paper_">
+							<img src="images/materials/paper.png" class="hvr-grow-rotate">
+							<p>Paper</p>
+						</a>
+					</div>
+					<div class="col col-1-6 col-3-3 hide1">
+						<a href="materials.html#rubber_">
+							<img src="images/materials/rubbers.png" class="hvr-grow-rotate">
+							<p>Rubber</p>
+						</a>
+					</div>
+					<div class="col col-1-6 col-3-3 hide1">
+						<a href="materials.html#foamRubber_">
+							<img src="images/materials/foam_rubber.png" class="hvr-grow-rotate">
+							<p>Foam Rubber</p>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<a class="button hvr-fade-c" href="materials.html">MORE MATERIALS</a>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="contentStyle1">
+			<div class="grid">
+				<div class="row">
+					<div id="mapContainer" class="col col-4-7">
+						<div id="mapCanvas"></div>
+					</div>
+					<div id="contactText" class="col col-2-6 col-4-5">
+						<h1>Come visit our studio.</h1>
+						<p>We are always happy to hear from you, about new projects or just to catch up.</p>
+						<p>If you're in Chicago, ask about scheduling a studio tour - we'll let you get hands-on with our material samples and meet the AOKO team.</p>
+					</div>
+					<div id="businessHours" class="col col-2-6 col-4-5">
+						<h1>BUSINESS HOURS</h1>
+						<p>Monday - Friday</p>
+						<p>09:00 - 17:00</p>
+						<p>please call in advance</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+<!-- end PAGE CONTENT !-->
+
+<!-- FOOTER !-->
+	<footer>
+		<nav class="socialMenu">
+			<ul class="group">
+				<li><a href="#" id="socLink1">
+   					<img id="socImg1" src="#" alt="#"/>
+   					<div class="socialHover hvr-fade-a"></div>
+				</a></li>
+				<li><a href="#" id="socLink2">
+   					<img id="socImg2" src="#" alt="Instagram"/>
+   					<div class="socialHover hvr-fade-a"></div>
+				</a></li>
+				<li><a href="#" id="socLink3">
+   					<img id="socImg3" src="#" alt="#"/>
+   					<div class="socialHover hvr-fade-a"></div>
+				</a></li>
+				<li><a href="#" id="socLink4">
+   					<img id="socImg4" src="#" alt="email"/>
+   					<div class="socialHover hvr-fade-a"></div>
+				</a></li>
+			</ul>
+		</nav>
+		<div id="land-1" class="land"></div>
+		<div id="land-2" class="land"></div>
+		<section id="pageInfo">
+			<p>Copyright &copy;
+				<script type="text/javascript">
+					var d = new Date()
+					document.write(d.getFullYear())
+				</script> 
+			AOKO, all rights reserved.</p>
+			<p>Updated <span id="lastUpdated"></span>
+				<script type="text/javascript">
+					var date = document.lastModified;
+					document.getElementById("lastUpdated").innerHTML=date;
+				</script>
+			</p>
+		</section>
+	</footer>
+<!-- end FOOTER !-->
+
+</main>
+</body>
+
+<script src = "https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="js/gmap.js"></script>
+
+</html>

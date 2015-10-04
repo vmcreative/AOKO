@@ -1,0 +1,136 @@
+.row {
+	display: -webkit-flex;
+    display: -ms-flexbox;
+	display:flex;
+    -webkit-align-items:center;
+    -ms-align-items:center;
+    align-items:center;
+}
+.slideContainer {
+	position: relative;
+	display:block;
+	width: 100%;
+	max-width: 36rem;
+	margin: 0rem auto;
+}
+.dummy {
+	padding-top: 71.429%;
+}
+.slide {
+	width: 100%;
+	height: 100%;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	position: absolute;
+	display: none;
+}
+.slide img {
+	width: 100%;
+	height: 100%;
+}
+#mahogany {
+	display: block;
+}
+.productHeader h1{
+	padding: .25rem .5rem;
+}
+.productHeader h1 span{
+	float: right;
+	font-size: 80%;
+	padding-top: .2rem;
+	vertical-align: bottom;
+}
+#novaSkin .productHeader h1 {
+	background-color: #b889ef;
+}
+.optionPanel {
+    padding: .75rem;
+    background-color: #f3f3f3;
+    text-align: center;
+	margin-bottom: .75rem;
+	box-sizing: border-box;
+}
+.optionPanel p {
+    font-size: 80%;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 0em;
+    color: black;
+}
+.slideControl {
+	margin: 0rem auto;
+}
+.slideControl p {
+	font-weight: 300;
+	padding-bottom: 0rem;
+}
+.slideControl button {
+	position: relative;
+	padding: .375rem;
+	width: 3.2rem;
+	height: 3.2rem;
+	margin: 0rem -.25rem;
+	outline: 0;
+	border: 0;
+	background: none;
+	cursor: pointer; cursor: hand;
+}
+.slideControl button::-moz-focus-inner {
+    padding: 0rem;
+    border: 0;
+}
+.slideControl button:focus, .slideControl button:active {
+	padding: .375rem;
+}
+.pricing table {
+	padding-top: .75rem;
+	margin: 0em auto;
+	width: 100%;
+	background-color:  #f3f3f3;
+	font-size: 1.2em;
+	text-align: center;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+.pricing thead td {
+	padding-bottom: .5rem;
+}
+.pricing tbody td {
+	padding-top: .5rem;
+}
+.pricing td {
+	padding: 1rem;
+}
+
+@media screen and (max-width: 56.250em) {
+	.slideContainer {
+		max-width: 33.5rem;
+	}
+	.productHeader, .optionPanel, .productSpec, .pricing table {
+		max-width: 40rem;
+		margin: 0rem auto;
+	}
+	.optionPanel {
+		margin-bottom: .75rem;
+	}
+	.productHeader {
+		padding-top: .75rem;
+	}
+	.row {
+		display: block;
+	}
+}
+@media screen and (max-width: 35rem) {
+	.thumbnail img {
+		width: 100%;
+	}
+	.optionPanel p {
+    font-size: 75%;
+	}
+	.slideControl button {
+		width: 3rem;
+		height: 3rem;
+	}
+}

@@ -1,0 +1,213 @@
+/* SPLASH IMAGES */
+.splashImage {
+    height: 23.650em;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-style: solid;
+    border-right-color: white;
+    border-right-width: 1.250em;
+    box-sizing: border-box;
+}
+#splashImage1 {
+	background-image: 
+    url(../images/splash/aoko_stool.jpg);
+}
+#splashImage2 {
+	background-image: 
+    url(../images/splash/target_practice.jpg);
+}
+/* end SPLASH IMAGES */
+
+/* MODAL WINDOW */
+#modalWindow {
+   display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 9999;
+    cursor: pointer; cursor: hand;
+}
+#modalBox {
+    position: absolute;
+    width: 110vh;
+    height: 85vh;
+    background-color: #d083fc;
+    left: 48.5vw;
+    margin-left: -51vh;
+    margin-top: 7.5vh;
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+    cursor: auto;
+}
+#modalImg {
+    position: absolute;
+    top: 10vh;
+    left: 14vh;
+    width: 95vh;
+    height: auto;
+}
+.modalText {
+    position: absolute;
+    font-size: 3.5vh;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    padding: .020em .400em .070em;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+#m-t-1 {
+    font-size: 11vh;
+    font-weight: 700;
+    color: #ffff00;
+    top: 0.2em;
+    left: -0.6em;
+    padding: .020em .135em .070em;
+    -ms-transform: rotate(-13deg);
+    -webkit-transform: rotate(-13deg);
+    transform: rotate(-13deg);
+}
+#m-t-2 {
+    top: 8em;
+    left: 1.135em;
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+#m-t-3 {
+    top: 10.783em;
+    left: .511em;
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+#m-t-4 {
+    top: 13.336em;
+    left: 1.135em;
+    -ms-transform: rotate(-13deg);
+    -webkit-transform: rotate(-13deg);
+    transform: rotate(-13deg);
+}
+#m-t-5 {
+    font-size: 6vh;
+    top: 11.8em;
+    left: 9.3em;
+    color: #ffff00;
+    padding: .120em .260em .275em;
+    -ms-transform: rotate(-9deg);
+    -webkit-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+    cursor: pointer; cursor: hand;
+}
+#m-close {
+    font-size: 1em;
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    right: -1em;
+    top: -1em;
+    -webkit-border-radius: .75em;
+    -moz-border-radius: .75em;
+    border-radius: .75em;
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    cursor: pointer; cursor: hand;
+}
+#m-close img {
+    width: 3em;
+    height: 3em;
+}
+#m-close:hover, #m-close:active {
+    background-color: #fffa00;
+}
+@media screen and (max-width: 65em) {
+    #modalBox {width: 88vh;height: 68vh;left: 50vw;margin-left: -42.3vh;margin-top: 16vh;}
+    #modalImg {top: 8vh;left: 11.2vh;width: 76vh;height: auto;}
+    .modalText {font-size: 2.640vh;}
+    #m-t-1 {font-size: 8.8vh;}
+    #m-t-5 {font-size: 4.8vh;}
+    #m-close {font-size: .8em;}
+}
+@media screen and (max-width: 55em) {
+    #modalBox {width: 70.4vh;height: 54.4vh;left: 50vw;margin-left: -33.8vh;margin-top: 22.8vh;}
+    #modalImg {top: 6.4vh;left: 8.96vh;width: 60.8vh;height: auto;}
+    .modalText {font-size: 2.112vh;}
+    #m-t-1 {font-size: 7.04vh;}
+    #m-t-5 {font-size: 3.84vh;}
+    #m-close {font-size: .64em;}
+}
+@media screen and (max-width: 48em) {
+    #modalBox {width: 56.32vh;height: 43.52vh;left: 50vw;margin-left: -27vh;margin-top: 28.24vh;}
+    #modalImg {top: 5.12vh;left: 7.168vh;width: 48.64vh;height: auto;}
+    .modalText {font-size: 1.690vh;}
+    #m-t-1 {font-size: 5.632vh;}
+    #m-t-5 {font-size: 3.072vh;}
+    #m-close {font-size: .512em;}
+}
+@media screen and (max-width: 35em) {
+    #modalBox {width: 45.056vh;height: 34.816vh;left: 49.7vw;margin-left: -21.6vh;margin-top: 32.592vh;}
+    #modalImg {top: 4.096vh;left: 5.734vh;width: 38.912vh;height: auto;}
+    .modalText {font-size: 1.352vh;}
+    #m-t-1 {font-size: 4.506vh;}
+    #m-t-5 {font-size: 2.458vh;}
+    #m-close {font-size: .410em;}
+}
+/* end MODAL WINDOW */
+
+/* MAP */
+#mapContainer {
+    height: 23.650em;
+}
+#mapCanvas {
+    height: 100%;
+}
+.gm-style-iw
+{
+    left: 1em !important;
+    text-align: center;
+    font-size: 90%;
+}
+.gm-style-iw > div:first-child > div > div:last-child p{
+    padding-bottom: 0.050em;
+}
+@media screen and (max-width:56.249em) {
+    #mapContainer {
+        padding-bottom: 1em;
+    }
+}
+#businessHours {
+    height: 13.450em;
+    font-size: 90%;
+    font-weight: 400;
+    text-align: center;
+    padding: 2.5em 0em;
+    background-color: #f3f3f3;
+    border-style: solid;
+    border-right-color: white;
+    border-right-width: 1.4em;
+    box-sizing: border-box;
+}
+/* end MAP */
+
+/* MOBILE VIEW */
+@media screen and (max-width:35em) {
+    .contentStyle1 {
+    margin-bottom: 1.563em;
+    }
+    .contentStyle1 iframe{
+        height: 15.625em; 
+    }
+    .contentStyle2 {
+    margin-bottom: 1.563em;
+    }
+}
+/* end MOBILE VIEW */

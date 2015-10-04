@@ -1,0 +1,135 @@
+
+form {
+	font-size: 1em;
+	background-color: #f3f3f3;
+	padding: 1em;
+	box-sizing: border-box;
+}
+#fContainer {
+	font-weight: 400;
+}
+#fContainer, #mContainer {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+}
+fieldset {
+	padding-right: 1em;
+}
+#mContainer {
+	height: 19.75em;
+}
+textarea {
+	resize: none;
+	height: 100%;
+	width: 100%;
+	padding: 1em;
+	box-sizing: border-box;
+}
+label, input, legend {
+	width: 100%;
+	text-align: left;
+	display: inline-block;
+	margin-bottom: .5em;
+}
+label span, legend span {
+	margin-left: .5em;
+	font-size: .8em;
+	font-weight: 300;
+	color: red;
+}
+textarea + span {
+	position: relative;
+    top: -19.5rem;
+    margin: 1em;
+    font-size: .8em;
+    color: red;
+}
+textarea:active + span, textarea:focus + span {
+	display: none;
+}
+#quoteType input[type="checkbox"] {
+    display:none;
+}
+#quoteType label {
+	display: inline;
+}
+#quoteType input[type="checkbox"] + label span {
+	float: left;
+	width: 4em;
+    padding: .5em;
+    margin-right: .5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 300;
+    vertical-align:middle;
+    color: white;
+    background-color: black;
+    cursor:pointer;
+}
+#quoteType input[type="checkbox"] + #qsLabel3 span {
+	margin-right: 0em;
+}
+#quoteType input[type="checkbox"]:checked + #qsLabel1 span {
+	color: black;
+	background-color: #00fcff;
+}
+#quoteType input[type="checkbox"]:checked + #qsLabel2 span {
+	color: black;
+	background-color: #fffa00;
+}
+#quoteType input[type="checkbox"]:checked + #qsLabel3 span {
+	color: black;
+	background-color: #ff40ff;
+}
+#imgUpload {
+	width: 100%;
+	height: auto;
+	margin-bottom: .5em;
+}
+#sContainer {
+	width: 50%;
+	display: block;
+	margin: 0em;
+	margin-left: auto;
+}
+#submit {
+	padding: .3em 0em;
+	margin-bottom: 0em;
+	text-align: center;
+	font-size: 1.25em;
+	color: white;
+	background-color: black;
+	border-style: none;
+	cursor: pointer; cursor: hand;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+	border: 1px solid #EEE;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, textarea:focus {
+    border: 1px solid #CCC;
+    outline: medium none;
+}
+@media screen and (max-width: 46em) {
+	#fContainer, #mContainer, #sContainer {
+		width: 100%;
+	}
+	fieldset {
+	padding-right: 0.15em;
+	}
+}
+@media screen and (max-width: 35em) {
+	#quoteType input[type="checkbox"] + label span {
+	width: auto;
+	font-size: 90%;
+	}
+}
+.contentArea .toggle-btn-visible {
+	display: block;
+}
+.contentArea .toggle-target-hidden {
+	display: none;
+}
+.contentArea .toggle-target-expanded {
+	display: block;
+}

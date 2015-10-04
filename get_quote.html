@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- STYLE RESET !-->
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<!-- MAIN CSS !-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- PAGE CSS !-->
+<link rel="stylesheet" type="text/css" href="css/get_quote.css">
+<!-- FONTS !-->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=roboto:400italic,300,700,400">
+<link rel="stylesheet" type="text/css" href="http://www.google.com/fonts#UsePlace:use/css?family=roboto+slab:400,300,700">
+<!-- FAVICON !-->
+<link rel="shortcut icon" href="ico/favicon_slide.ico" type="image/x-icon"/>
+
+<html>
+<head>
+
+<!-- META !-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aoko | Empowering Creativity</title>
+<!-- jQUERY !-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- FORM VALIDATE !-->
+<script src="js/gen_validatorv4.js"></script>
+<!-- NAV !-->
+<script src="js/nav.js"></script>
+<!-- SHOW/HIDE !-->
+<script src="js/declarativeToggle.js"></script>
+
+</head>
+<body>
+<main role="main">
+
+<!-- SCROLL NAV !-->
+	<nav class="scrollMenu shadowed hideSmall" role="navigation">
+		<ul id="scrollList" class="group"></ul>
+	</nav>
+	<script src="js/scrollNav.js"></script>
+<!-- end SCROLL NAV !-->
+
+<!-- HEADER !-->
+	<header id="header" class="noDrag">
+		<div class="shadowed">
+			<div id="leftCloud" data-scroll-speed="3"></div>
+			<div id="topCloud" data-scroll-speed="2"></div>
+			<div id="rightCloud" data-scroll-speed="3"></div>
+		</div>
+		<div data-scroll-speed="2">
+			<div id="logo" ></div>
+			<div id="rotate"></div>
+		</div>
+	</header>
+<!-- end HEADER !-->
+
+<!-- NAV BAR !-->
+	<nav class="menu" role="navigation">
+	<span data-toggle-target=".nav-show-hide" data-toggle-text="HIDE" class="mobileMenu">MENU</span>
+		<div class="nav-show-hide">
+			<ul id="menuList" class="group">
+				<li><a href="#" id="menuLink1" class="menuButton hvr-fade-m">&nbsp;</a></li>
+				<li><a href="#" id="menuLink2" class="menuButton hvr-fade-c">&nbsp;</a></li>
+				<li><a href="#" id="menuLink3" class="menuButton hvr-fade-y">&nbsp;</a></li>
+				<li><a href="#" id="menuLink4" class="menuButton hvr-fade-m">&nbsp;</a></li>
+				<li><a href="#" id="menuLink5" class="menuButton hvr-fade-c">&nbsp;</a></li>
+				<li><a href="#" id="menuLink6" class="menuButton hvr-fade-y">&nbsp;</a></li>
+			</ul>
+		</div>
+	</nav>
+<!-- end NAV BAR !-->
+
+<!-- PAGE CONTENT !-->
+	<div class="contentArea shadowed">
+		<div class="grid">
+			<section id="pageTitle">
+				<div class="contentStyle1 col-2-10 col-4-8">
+					<p>Please fill out the form below to contact AOKO regarding the purchase of any products, services or materials you wish. Our team will get back to you ASAP!<br>
+					<b>For service quotes:</b> please include a clear description of your project, as well as a picture or image of your design. We may ask you to provide more information or clarification.<br>
+					<b>For products and materials:</b> Be sure to include the quantity and style or color of anything you wish to purchase. Please note that we do not hold stock of some materials, and there may be a processing delay for specialty orders.</p>
+				</div>
+			</section>
+			<section id="inputForm">
+				<form method="post" id="quoteRequest">
+					<div id="fContainer">
+						<fieldset>
+							<label for="firstName">First Name*<span id="quoteRequest_firstName_errorloc"></span></label>
+							<input id="firstName" name="firstName" type="text">
+							<label for="lastName">Last Name*<span id="quoteRequest_lastName_errorloc"></span></label>
+							<input id="lastName" name="lastName" type="text">
+							<label for="company">Company<span id="quoteRequest_company_errorloc"></span></label>
+							<input id="company" name="company" type="text">
+							<label for="email">Email*<span id="quoteRequest_email_errorloc"></span></label>
+							<input id="email" name="email" type="email">
+							<label for="telephone">Telephone<span id="quoteRequest_telephone_errorloc"></span></label>
+							<input id="telephone" name="telephone" type="tel">
+							<div id="quoteType">
+								<legend>Quote For (check all that apply)*<span id="quoteRequest_quoteSelection1_errorloc"></span></legend>
+								<input id="quoteSelection1" name="quoteSelection1" type="checkbox" value="quoteSelection1">
+								<label id="qsLabel1" for="quoteSelection1"><span>Products</span></label>
+								<input id="quoteSelection2" name="quoteSelection2" type="checkbox" value="quoteSelection2" data-toggle-target="#imgUpload">
+								<label id="qsLabel2" for="quoteSelection2"><span>Services</span></label>
+								<input id="quoteSelection3" name="quoteSelection3" type="checkbox" value="quoteSelection3">
+								<label id="qsLabel3" for="quoteSelection3"><span>Materials</span></label>
+								<div id="imgUpload">
+								<legend>Attach Image File</legend>
+								<input name="pic" type="file" accept="image/*">
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					<div id="mContainer">
+						<textarea id="message" name="message" onfocus="clearError(this.value)" onkeydown="clearError(this.value)" onclick="clearError(this.value)" onblur="clearError(this.value)"></textarea>
+						<span id="quoteRequest_message_errorloc"></span>
+					</div>
+					<div id="sContainer">
+						<input id="submit" type="submit" value="Send!">
+					</div>
+				</form>
+				<!-- PAGE JS !-->
+				<script src="js/form_validate.js"></script>
+			</section>
+		</div>
+	</div>
+<!-- end PAGE CONTENT !-->
+
+<!-- FOOTER !-->
+	<footer>
+		<nav class="socialMenu">
+			<ul class="group">
+				<li><a href="#" id="socLink1">
+   					<img id="socImg1" src="#" alt="#"/>
+   					<div class="socialHover hvr-fade-a"></div>
+				</a></li>
+				<li><a href="#" id="socLink2">
+   					<img id="socImg2" src="#" alt="Instagram"/>
+   					<div class="socialHover hvr-fade-a"></div>
+				</a></li>
+				<li><a href="#" id="socLink3">
+   					<img id="socImg3" src="#" alt="#"/>
+   					<div class="socialHover hvr-fade-a"></div>
+				</a></li>
+				<li><a href="#" id="socLink4">
+   					<img id="socImg4" src="#" alt="email"/>
+   					<div class="socialHover hvr-fade-a"></div>
+				</a></li>
+			</ul>
+		</nav>
+		<div id="land-1" class="land"></div>
+		<div id="land-2" class="land"></div>
+		<section id="pageInfo">
+			<p>Copyright &copy;
+				<script type="text/javascript">
+					var d = new Date()
+					document.write(d.getFullYear())
+				</script> 
+			AOKO, all rights reserved.</p>
+			<p>Updated <span id="lastUpdated"></span>
+				<script type="text/javascript">
+					var date = document.lastModified;
+					document.getElementById("lastUpdated").innerHTML=date;
+				</script>
+			</p>
+		</section>
+	</footer>
+<!-- end FOOTER !-->
+
+</main>
+</body>
+
+</html>
